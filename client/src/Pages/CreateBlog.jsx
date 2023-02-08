@@ -73,7 +73,7 @@ const CreateBlog = () => {
     try {
       let user= JSON.parse(localStorage.getItem("userInfo"))
       let token= user.token
-      console.log(token)
+      // console.log(token)
       const { data } = await createBlog(
         "blog/create",
         {
@@ -96,7 +96,7 @@ const CreateBlog = () => {
       });
       
    
-    //    navigate("/")
+       navigate("/")
     } catch (error) {
       console.log(error)
       toast({

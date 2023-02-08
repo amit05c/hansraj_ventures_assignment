@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Image, Input, Text } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+
 import { getData } from "../Api/Api";
 import { useNavigate } from "react-router-dom";
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
       .then((res) => setData(res.data.data))
       .catch((err) => console.log(err));
   }, []);
-  console.log(data)
+  // console.log(data)
 
   const handleLogout =()=>{
     localStorage.removeItem("userInfo")

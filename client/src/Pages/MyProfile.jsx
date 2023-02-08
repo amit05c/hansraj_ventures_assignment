@@ -3,7 +3,7 @@ import React from 'react'
 
 const MyProfile = () => {
   let user= JSON.parse(localStorage.getItem("userInfo"))
-  console.log(user.user)
+  // console.log(user.user)
   return (
     <Box>
       <Box border="1px solid white" padding={"3rem"}>
